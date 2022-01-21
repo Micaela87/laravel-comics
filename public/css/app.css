@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* header */
+header {
+  height: 12rem;
+  background-color: white;
+}
+
+header img {
+  width: 8%;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 1.2rem;
+  padding: 3rem 0;
+}
+
+header a {
+  display: block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+
+header a::after {
+  content: "";
+  width: 100%;
+  height: 1rem;
+  position: absolute;
+  top: 5.79rem;
+  left: 0;
+}
+
+header a:hover {
+  color: #0282f9;
+}
+
+header a:hover::after {
+  background-color: #0282f9;
+}
+
+/* banner */
+#banner {
+  height: 32rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#banner img {
+  width: 100%;
+}
+
+#banner span {
+  display: block;
+  color: white;
+  font-size: 2rem;
+  background-color: #0282f9;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: -2.2rem;
+  left: 15rem;
+  z-index: 1;
+}
+
+/* home main */
+#home-main section {
+  position: relative;
+}
+
+#home-main .container {
+  padding: 5rem 0 4rem 0;
+}
+#home-main .container-flex {
+  flex-wrap: wrap;
+}
+
+#home-main span {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  background-color: #0282f9;
+  padding: 1rem 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#home-main .series {
+  font-size: 2rem;
+  position: absolute;
+  top: -2.2rem;
+  left: 10rem;
+  z-index: 1;
+}
+
+#home-main #load-more {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+
+/* product card */
+.card {
+  width: calc(100% / 6);
+  min-height: 30rem;
+  padding: 1rem;
+}
+
+.card .img-container {
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card .img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.card span {
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+
+/* upper footer */
+#upper-footer {
+  background-image: url(/images/footer-bg.jpg?30a5c2238c63921788be216d1794abf7);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+}
+
+#upper-footer h3 {
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+#upper-footer ul li {
+    list-style-type: none;
+    line-height: 1.4;
+}
+
+#upper-footer ul li a {
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #696355;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.flex-container-column div {
+      padding: 1rem;
+}
+
+/* lower footer */
+#lower-footer {
+  background-color: #303030;
+  height: 10rem;
+  position: relative;
+  z-index: 1;
+}
+
+#lower-footer button {
+    color: white;
+    font-size: 1.8rem;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    box-shadow: none;
+    border: 3px solid #037def;
+    cursor: pointer;
+}
+
+#lower-footer h3 {
+    font-size: 1.8rem;
+    color: #037def;
+}
+
+#lower-footer ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
