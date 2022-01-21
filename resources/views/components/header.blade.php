@@ -1,5 +1,5 @@
 <header>
-    <div class="container container-flex">
+    <div id="upper-header" class="container container-flex">
         <img src={{ asset('img/dc-logo.png') }} alt="dc logo">
         <nav>
             <ul>
