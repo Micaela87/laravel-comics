@@ -212,6 +212,7 @@ header a:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   height: 35rem;
+  overflow: hidden;
 }
 
 #upper-footer h3 {
