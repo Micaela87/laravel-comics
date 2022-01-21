@@ -90,8 +90,8 @@ Route::get('/', function () {
     ];
 
     return view('pages.home', compact('productsData'));
-});
+})->name('home');
 
-Route::get('/single', function () {
+Route::get('single', function () {
     return view('pages.single');
-});
+})->name('single');

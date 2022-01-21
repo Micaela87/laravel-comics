@@ -8,7 +8,7 @@
         @foreach($productsData as $product)
             <div class="card">
                 <div class="img-container">
-                    <img src={{ $product["thumb"] }} :alt={{ $product["series"] }}>
+                    <a href="{{ route('single') }}"><img src={{ $product["thumb"] }} :alt={{ $product["series"] }}></a>
                 </div>
                 <span>{{ $product["series"] }}</span>
             </div>
