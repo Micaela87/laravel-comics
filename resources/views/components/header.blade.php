@@ -1,6 +1,6 @@
 <header>
     <div id="upper-header" class="container container-flex">
-        <img src={{ asset('img/dc-logo.png') }} alt="dc logo">
+        <img src={{ asset('/storage/assets/dc-logo.png') }} alt="dc logo">
         <nav>
             <ul>
                 <li><a href="#">CHARACTERS</a></li>
@@ -17,6 +17,6 @@
         </nav>
     </div>
     <section id="banner">
-        <img src={{ asset("img/jumbotron.jpg") }} alt="banner img">
+        <img src={{ asset("/storage/assets/jumbotron.jpg") }} alt="banner img">
     </section>
 </header>

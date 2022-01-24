@@ -10,7 +10,6 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background-color: black;
 }
 
 .container {
@@ -97,6 +96,7 @@ header a:hover::after {
 /* home main */
 .home-main {
   position: relative;
+  background-color: black;
 }
 
 .home-main .container {
@@ -126,7 +126,7 @@ header a:hover::after {
 .home-main #load-more {
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
   cursor: pointer;
 }
 
@@ -160,8 +160,11 @@ header a:hover::after {
 #blue-bar {
   background-color: #0282f9;
   height: fit-content;
-  position: relative;
-  z-index: 1;
+}
+
+#grey-bar {
+  background-color: #f6f6f6;
+  height: fit-content;
 }
 
 #blue-bar .s-container {
@@ -207,7 +210,7 @@ header a:hover::after {
 
 /* upper footer */
 #upper-footer {
-  background-image: url('../../public/img/footer-bg.jpg');
+  background-image: url('/storage/assets/footer-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

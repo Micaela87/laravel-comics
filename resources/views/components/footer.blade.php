@@ -12,7 +12,7 @@
                 </ul>
             </div> --}}
         </div>
-        <img src={{ asset("img/dc-logo-bg.png") }} alt="dc logo">
+        <img src={{ asset("/storage/assets/dc-logo-bg.png") }} alt="dc logo">
       </div>
     </section>
     <!-- lower footer -->
