@@ -99,14 +99,15 @@ header a:hover::after {
   background-color: black;
 }
 
-.home-main .container {
+main .container {
   padding: 5rem 0 4rem 0;
 }
-.home-main .container-flex {
+
+main .container-flex {
   flex-wrap: wrap;
 }
 
-.home-main span {
+main span {
   display: inline-block;
   text-transform: uppercase;
   color: white;
@@ -115,7 +116,7 @@ header a:hover::after {
   width: fit-content;
 }
 
-.home-main .series {
+main .series {
   font-size: 2rem;
   position: absolute;
   top: -2.2rem;
@@ -123,7 +124,7 @@ header a:hover::after {
   z-index: 1;
 }
 
-.home-main #load-more {
+main #load-more {
   font-size: 1.5rem;
   text-align: center;
   padding-bottom: 4rem;

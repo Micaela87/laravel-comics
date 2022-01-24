@@ -18,6 +18,13 @@ Route::get('/', function () {
     return view('pages.home', compact('productsData'));
 })->name('home');
 
-Route::get('single', function () {
-    return view('pages.single');
+Route::get('single/{id}', function ($id) {
+    $productsData = config('data.productsData');
+    $singleProduct = '';
+    foreach ($productsData as $product) {
+        if ($product["id"] === $id) {
+            $singleProduct = $product;
+        }
+    }
+    return view('pages.single', compact('singleProduct'));
 })->name('single');

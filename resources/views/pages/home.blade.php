@@ -1,14 +1,14 @@
 @extends('layouts.mainLayout')
 
 @section('main')
-
-<section class="home-main">
+<main>
+  <section class="home-main">
     <span class="series">current series</span>
     <div class="container container-flex">
         @foreach($productsData as $product)
             <div class="card">
                 <div class="img-container">
-                    <a href="{{ route('single') }}"><img src={{ $product["thumb"] }} alt={{ $product["series"] }}></a>
+                    <a href="{{ route('single', ['id' => $product["id"]]) }}"><img src={{ $product["thumb"] }} alt={{ $product["series"] }}></a>
                 </div>
                 <span>{{ $product["series"] }}</span>
             </div>
@@ -17,8 +17,8 @@
     <div id="load-more">
         <span>load more</span> 
     </div>
-</section>
-<section id="blue-bar">
+  </section>
+  <section id="blue-bar">
     <div class="s-container">
       <ul>
         {{-- <li v-for="(merch, i) in merchData" :key="i">
@@ -30,5 +30,6 @@
       </ul>
     </div>
   </section>
+</main>
     
 @endsection

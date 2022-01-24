@@ -1,18 +1,18 @@
 @extends('layouts.mainLayout')
 
 @section('main')
-
-<section class="home-main">
+<main>
+  <section class="single-main">
     <section id="blue-bar">
         <div class="s-container">
 
         </div>
     </section>
     <div class="container container-flex">
-        <h2>action comics #1000: the deluxe edition</h2>
+        <h2>{{ $singleProduct["series"] }}</h2>
     </div>
-</section>
-<section id="grey-bar">
+  </section>
+  <section id="grey-bar">
     <div class="s-container">
       <ul>
         {{-- <li v-for="(merch, i) in merchData" :key="i">
@@ -24,5 +24,6 @@
       </ul>
     </div>
   </section>
+</main>
     
 @endsection
